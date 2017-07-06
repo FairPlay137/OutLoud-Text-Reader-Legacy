@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A431868-D1DF-47BB-8AD4-639C5DBCE2BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OutLoud_Text_Reader</RootNamespace>
+    <AssemblyName>OutLoud Text Reader</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\appicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textresize.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fontSize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_25a0%286%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_25b6%288%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_2389%287%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_2692%283%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%284%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%285%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%289%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%2810%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f0c4%281%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f0c5%282%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f034%280%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_25a0%286%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_25b6%288%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_2389%287%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_2692%283%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%284%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%285%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%289%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_d83d%2810%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f0c4%281%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f0c5%282%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f034%280%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textsize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontAwesome_f121%280%29_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entypo_e715%280%29_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiticon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiticon_mid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiticon_smol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SpeakingCursor.cur" />
+    <Content Include="Readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

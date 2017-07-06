@@ -1,0 +1,12 @@
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\bin\Debug\OutLoud Text Reader.exe.config
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\bin\Debug\OutLoud Text Reader.exe
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\bin\Debug\OutLoud Text Reader.pdb
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\obj\Debug\OutLoud Text Reader.csprojResolveAssemblyReference.cache
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\obj\Debug\OutLoud_Text_Reader.Properties.Resources.resources
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\obj\Debug\OutLoud Text Reader.csproj.GenerateResource.Cache
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\obj\Debug\OutLoud Text Reader.exe
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\obj\Debug\OutLoud Text Reader.pdb
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\obj\Debug\OutLoud_Text_Reader.AboutForm.resources
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\obj\Debug\OutLoud_Text_Reader.MainForm.resources
+C:\Users\danie\documents\visual studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\obj\Debug\OutLoud_Text_Reader.ExportForm.resources
+C:\Users\danie\Documents\Visual Studio 2017\Projects\OutLoud Text Speaker\OutLoud Text Speaker\bin\Debug\Readme.txt
