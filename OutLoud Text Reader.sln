@@ -9,6 +9,7 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Description = An open source, free text reader for Windows, inspired by Speakonia.
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5A431868-D1DF-47BB-8AD4-639C5DBCE2BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

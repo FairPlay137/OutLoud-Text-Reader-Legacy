@@ -39,6 +39,8 @@
             this.scrollTimer = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.tickTimer = new System.Windows.Forms.Timer(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,9 +49,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 13);
+            this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Version Number Unknown";
+            this.label1.Text = "Version x.x.x.x";
             // 
             // label2
             // 
@@ -95,7 +97,7 @@
             this.creditsLabel1.BackColor = System.Drawing.Color.White;
             this.creditsLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.creditsLabel1.ForeColor = System.Drawing.Color.Black;
-            this.creditsLabel1.Location = new System.Drawing.Point(12, 143);
+            this.creditsLabel1.Location = new System.Drawing.Point(15, 157);
             this.creditsLabel1.Name = "creditsLabel1";
             this.creditsLabel1.Size = new System.Drawing.Size(356, 28);
             this.creditsLabel1.TabIndex = 5;
@@ -110,7 +112,7 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(293, 180);
+            this.button1.Location = new System.Drawing.Point(296, 192);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -123,11 +125,33 @@
             this.tickTimer.Interval = 1;
             this.tickTimer.Tick += new System.EventHandler(this.tickTimer_Tick);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 138);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(217, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "For new releases and bug reports, visit us on";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(225, 138);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(40, 13);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "GitHub";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // AboutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 215);
+            this.ClientSize = new System.Drawing.Size(380, 227);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.creditsLabel1);
             this.Controls.Add(this.label4);
@@ -159,5 +183,7 @@
         private System.Windows.Forms.Timer scrollTimer;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer tickTimer;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

@@ -313,7 +313,6 @@
     <None Include="Resources\appicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SpeakingCursor.cur" />
     <Content Include="Readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
