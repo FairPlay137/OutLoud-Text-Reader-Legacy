@@ -286,6 +286,7 @@ namespace OutLoud_Text_Reader
             MainTextBox.Clear();
             MainTextBox.ClearUndo();
             changesMade = false;
+            fileName = "";
         }
 
         private void MainTextBox_TextChanged(object sender, EventArgs e)
