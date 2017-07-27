@@ -21,6 +21,7 @@ namespace OutLoud_Text_Reader
         private Int64 offset;
         private bool ReadingFromMainTextBox = false;
         private string fileName = "";
+
         public MainForm()
         {
             InitializeComponent();
@@ -250,12 +251,13 @@ namespace OutLoud_Text_Reader
             {
                 toolStripProgressBar1.Maximum = (int)(lengthOfText);
                 toolStripProgressBar1.Value = (int)(e.CharacterPosition + e.CharacterCount + offset);
+                ToolbarIcon.Text = $"OutLoud Text Speaker - Speaking"; //TODO: Make this show the percentage
             }
             catch (Exception)
             {
+                ToolbarIcon.Text = "OutLoud Text Speaker - Speaking";
                 toolStripProgressBar1.Value = 0;
             }
-            ToolbarIcon.Text = "OutLoud Text Speaker - Speaking";
         }
 
         private void NewFileButton_Click(object sender, EventArgs e)

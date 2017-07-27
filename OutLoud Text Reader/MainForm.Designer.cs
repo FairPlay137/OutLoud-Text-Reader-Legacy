@@ -137,6 +137,8 @@
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -617,7 +619,7 @@
             this.playToolStripMenuItem.Image = global::OutLoud_Text_Reader.Properties.Resources.play1;
             this.playToolStripMenuItem.Name = "playToolStripMenuItem";
             this.playToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.playToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.playToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.playToolStripMenuItem.Text = "Play";
             this.playToolStripMenuItem.Click += new System.EventHandler(this.PlayButton_Click);
             // 
@@ -626,7 +628,7 @@
             this.pauseToolStripMenuItem.Image = global::OutLoud_Text_Reader.Properties.Resources.pause1;
             this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
             this.pauseToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F6;
-            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pauseToolStripMenuItem.Text = "Pause";
             this.pauseToolStripMenuItem.Click += new System.EventHandler(this.PauseButton_Click);
             // 
@@ -635,14 +637,14 @@
             this.stopToolStripMenuItem.Image = global::OutLoud_Text_Reader.Properties.Resources.stop1;
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
             this.stopToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F7;
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.stopToolStripMenuItem.Text = "Stop";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(124, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(149, 6);
             // 
             // propertiesToolStripMenuItem
             // 
@@ -651,7 +653,7 @@
             this.propertiesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.propertiesToolStripMenuItem.Image = global::OutLoud_Text_Reader.Properties.Resources.options;
             this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
-            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.propertiesToolStripMenuItem.Text = "Properties";
             this.propertiesToolStripMenuItem.Click += new System.EventHandler(this.PropertiesToolStripMenuItem_Click);
             // 
@@ -877,6 +879,7 @@
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(21, 22);
             this.RefreshButton.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.RefreshButton, "Refresh the voices list");
             this.RefreshButton.UseVisualStyleBackColor = true;
             this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
@@ -889,6 +892,7 @@
             this.LexiconButton.Size = new System.Drawing.Size(105, 22);
             this.LexiconButton.TabIndex = 19;
             this.LexiconButton.Text = "Lexicon...";
+            this.toolTip1.SetToolTip(this.LexiconButton, "Edit the lexicon, for ");
             this.LexiconButton.UseVisualStyleBackColor = true;
             this.LexiconButton.Click += new System.EventHandler(this.LexiconButton_Click);
             // 
@@ -899,6 +903,7 @@
             this.AboutVoiceButton.Size = new System.Drawing.Size(105, 22);
             this.AboutVoiceButton.TabIndex = 18;
             this.AboutVoiceButton.Text = "About...";
+            this.toolTip1.SetToolTip(this.AboutVoiceButton, "About the selected voice");
             this.AboutVoiceButton.UseVisualStyleBackColor = true;
             this.AboutVoiceButton.Click += new System.EventHandler(this.AboutVoiceButton_Click);
             // 
@@ -913,6 +918,7 @@
             this.TestButton.Size = new System.Drawing.Size(217, 26);
             this.TestButton.TabIndex = 17;
             this.TestButton.Text = "Test";
+            this.toolTip1.SetToolTip(this.TestButton, "Test the selected voice");
             this.TestButton.UseVisualStyleBackColor = true;
             this.TestButton.Click += new System.EventHandler(this.TestButton_Click);
             // 
@@ -927,6 +933,7 @@
             this.ResetButton.TabIndex = 16;
             this.ResetButton.Text = "Reset";
             this.ResetButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.ResetButton, "Reset values to default");
             this.ResetButton.UseVisualStyleBackColor = true;
             // 
             // ApplyButton
@@ -939,6 +946,7 @@
             this.ApplyButton.TabIndex = 15;
             this.ApplyButton.Text = "Apply";
             this.ApplyButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.ApplyButton, "Apply (activate) the settings");
             this.ApplyButton.UseVisualStyleBackColor = true;
             this.ApplyButton.Click += new System.EventHandler(this.ApplyButton_Click);
             // 
@@ -951,6 +959,7 @@
             this.realTimeChangeCheckBox.Size = new System.Drawing.Size(195, 17);
             this.realTimeChangeCheckBox.TabIndex = 14;
             this.realTimeChangeCheckBox.Text = "Apply changes to values in real-time";
+            this.toolTip1.SetToolTip(this.realTimeChangeCheckBox, "Activate changes as they are changed");
             this.realTimeChangeCheckBox.UseVisualStyleBackColor = true;
             // 
             // volumeValueLabel
@@ -975,6 +984,7 @@
             this.volumeSlider.SmallChange = 5;
             this.volumeSlider.TabIndex = 12;
             this.volumeSlider.TickFrequency = 5;
+            this.toolTip1.SetToolTip(this.volumeSlider, "Volume of the speaker\'s voice");
             this.volumeSlider.Value = 100;
             this.volumeSlider.Scroll += new System.EventHandler(this.VolumeSlider_Scroll);
             // 
@@ -1006,6 +1016,7 @@
             this.speedSlider.Name = "speedSlider";
             this.speedSlider.Size = new System.Drawing.Size(220, 45);
             this.speedSlider.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.speedSlider, "The speed the speaker speaks at");
             this.speedSlider.Scroll += new System.EventHandler(this.SpeedSlider_Scroll);
             // 
             // label4
@@ -1038,6 +1049,7 @@
             this.PitchSlider.Name = "PitchSlider";
             this.PitchSlider.Size = new System.Drawing.Size(220, 45);
             this.PitchSlider.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.PitchSlider, "Pitch of the speaker\'s voice");
             this.PitchSlider.Scroll += new System.EventHandler(this.PitchSlider_Scroll);
             // 
             // label3
@@ -1059,6 +1071,7 @@
             this.comboBox2.Size = new System.Drawing.Size(158, 21);
             this.comboBox2.TabIndex = 4;
             this.comboBox2.Text = "Populating list...";
+            this.toolTip1.SetToolTip(this.comboBox2, "Voice of speaker");
             // 
             // label2
             // 
@@ -1080,6 +1093,9 @@
             this.comboBox1.Size = new System.Drawing.Size(150, 21);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "SAPI 5";
+            this.toolTip1.SetToolTip(this.comboBox1, "The type of speech engine the speaker\'s voice is using\r\nOlder voices like LH TruV" +
+        "oice voices will be under SAPI 4\r\nMore modern voices like Microsoft Anna will be" +
+        " under SAPI 5");
             // 
             // label1
             // 
@@ -1312,6 +1328,8 @@
         private System.Windows.Forms.ToolStripMenuItem highlightTextAsItsBeingSpokenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stopSpeakingWhenTextClickedToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 
