@@ -139,6 +139,7 @@
             this.quitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.hideOnMinimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -670,7 +671,8 @@
             this.highlightTextAsItsBeingSpokenToolStripMenuItem,
             this.stopSpeakingWhenTextClickedToolStripMenuItem,
             this.toolStripSeparator15,
-            this.hideOnCloseButtonToolStripMenuItem});
+            this.hideOnCloseButtonToolStripMenuItem,
+            this.hideOnMinimizeToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
@@ -1181,6 +1183,14 @@
             this.quitToolStripMenuItem1.Text = "Quit";
             this.quitToolStripMenuItem1.Click += new System.EventHandler(this.QuitToolStripMenuItem1_Click);
             // 
+            // hideOnMinimizeToolStripMenuItem
+            // 
+            this.hideOnMinimizeToolStripMenuItem.CheckOnClick = true;
+            this.hideOnMinimizeToolStripMenuItem.Enabled = false;
+            this.hideOnMinimizeToolStripMenuItem.Name = "hideOnMinimizeToolStripMenuItem";
+            this.hideOnMinimizeToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
+            this.hideOnMinimizeToolStripMenuItem.Text = "Hide on Minimize";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1330,6 +1340,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.ToolStripMenuItem hideOnMinimizeToolStripMenuItem;
     }
 }
 
