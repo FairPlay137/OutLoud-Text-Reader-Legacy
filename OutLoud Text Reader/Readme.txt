@@ -14,3 +14,4 @@ Planned Features:
  - Microsoft Server Speech support
  - Lexicon
  - Better pitch controls
+ - Support for Balabolka's CLI as an alternative to OutLoud's built-in SAPI 5 support. (Balabolka supports SAPI 4, SAPI 5, and Microsoft Speech Platform) I might make this a separate release as "OutLoud Text Reader (Balabolka CLI Frontend edition)"
