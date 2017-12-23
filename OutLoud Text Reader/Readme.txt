@@ -1,5 +1,5 @@
-﻿DanielWS424-TTS/FairPlay137 presents...
-OutLoud Text Reader - Beta 1
+﻿FairPlay137-TTS presents...
+OutLoud Text Reader - Beta 2 pre
 Thank you for downloading OutLoud Text Reader; an open source, free TTS text reader for Windows!
 
 Known Issues:

@@ -130,14 +130,14 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 138);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(217, 13);
+            this.label5.Size = new System.Drawing.Size(257, 13);
             this.label5.TabIndex = 7;
-            this.label5.Text = "For new releases and bug reports, visit us on";
+            this.label5.Text = "For new releases and bug reports, visit this project on";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(225, 138);
+            this.linkLabel1.Location = new System.Drawing.Point(265, 138);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(40, 13);
             this.linkLabel1.TabIndex = 8;

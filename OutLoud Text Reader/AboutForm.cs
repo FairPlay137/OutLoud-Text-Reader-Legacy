@@ -35,7 +35,7 @@ namespace OutLoud_Text_Reader
             switch (index)
             {
                 case 0:
-                    return "Programmed by DanielWS424-TTS/FairPlay137";
+                    return "Programmed by FairPlay137-TTS";
                 case 1:
                     return "Design inspired by CFS-Technologies' Speakonia";
                 case 2:
