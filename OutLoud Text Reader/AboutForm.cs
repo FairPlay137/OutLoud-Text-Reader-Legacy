@@ -41,7 +41,7 @@ namespace OutLoud_Text_Reader
                 case 2:
                     return "This software uses Microsoft Speech API (SAPI) 5.4";
                 case 3:
-                    return "This software uses .NET Framework 4.5";
+                    return "This software uses .NET Framework 4.0";
                 case 4:
                     return "Icons generated with Iconion 2.7";
                 default:
