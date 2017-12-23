@@ -22,3 +22,5 @@ C:\Users\danie\Documents\Visual Studio 2017\Projects\OutLoud Text Reader\OutLoud
 C:\Users\danie\Documents\Visual Studio 2017\Projects\OutLoud Text Reader\OutLoud Text Reader\obj\Debug\OutLoud Text Reader.csproj.GenerateResource.Cache
 C:\Users\danie\Documents\Visual Studio 2017\Projects\OutLoud Text Reader\OutLoud Text Reader\obj\Debug\OutLoud Text Reader.exe
 C:\Users\danie\Documents\Visual Studio 2017\Projects\OutLoud Text Reader\OutLoud Text Reader\obj\Debug\OutLoud Text Reader.pdb
+C:\Users\danie\Documents\Visual Studio 2017\Projects\OutLoud Text Reader\OutLoud Text Reader\bin\Debug\System.Net.Http.dll
+C:\Users\danie\Documents\Visual Studio 2017\Projects\OutLoud Text Reader\OutLoud Text Reader\bin\Debug\System.Net.Http.xml

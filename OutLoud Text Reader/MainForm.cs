@@ -407,14 +407,14 @@ namespace OutLoud_Text_Reader
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            int result = AttemptSave(false);
-            if (result != 0)
+            String result = AttemptSave(false);
+            if (result != null)
             {
-                MessageBox.Show($"Error while saving. (HResult = {result})", "OutLoud Text Reader", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error while saving. ({result})", "OutLoud Text Reader", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private int AttemptSave(bool SaveAs)
+        private String AttemptSave(bool SaveAs)
         {
             try
             {
@@ -425,15 +425,15 @@ namespace OutLoud_Text_Reader
                     }
                     else
                     {
-                        return 0;
+                        return null;
                     }
                 File.WriteAllText(fileName,MainTextBox.Text);
                 changesMade = false;
-                return 0;
+                return null;
             }
             catch (Exception e)
             {
-                return e.HResult;
+                return e.Message;
             }
         }
 
@@ -555,10 +555,10 @@ namespace OutLoud_Text_Reader
 
         private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int result = AttemptSave(true);
-            if (result != 0)
+            String result = AttemptSave(true);
+            if (result != null)
             {
-                MessageBox.Show($"Error while saving. (HResult = {result})", "OutLoud Text Reader", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error while saving. ({result})", "OutLoud Text Reader", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
