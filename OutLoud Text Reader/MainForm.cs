@@ -147,7 +147,10 @@ namespace OutLoud_Text_Reader
             ts.SelectVoice(comboBox2.Text);
             ts.Volume = volumeSlider.Value;
             ts.Rate = speedSlider.Value;
-            ts.SpeakAsync($"Test 1 2 3; This is {ts.Voice.Name}.");
+            if(ts.Voice.Name == "Microsoft Sam")
+                ts.SpeakAsync("You have selected Microsoft Sam as the computer's default unused feature. Blah blah. Yo dude! That job can be boring! I can do more than that. So give me some music. E flat please.");
+            else
+                ts.SpeakAsync($"Test 1 2 3; This is {ts.Voice.Name}.");
         }
 
         private void ApplyButton_Click(object sender, EventArgs e)
@@ -229,7 +232,7 @@ namespace OutLoud_Text_Reader
 
         private void WAVToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OutLoud_Text_Reader.ExportForm a = new OutLoud_Text_Reader.ExportForm(MainTextBox.Text, sapi5engine.Voice, XMLEnableButton.Checked, sapi5engine.Rate, sapi5engine.Volume);
+            ExportForm a = new ExportForm(MainTextBox.Text, sapi5engine.Voice, XMLEnableButton.Checked, sapi5engine.Rate, sapi5engine.Volume);
             a.ShowDialog();
         }
         private void SpeakProgression(object sender, SpeakProgressEventArgs e)
@@ -442,7 +445,7 @@ namespace OutLoud_Text_Reader
 
         private void AboutOutLoudTextReaderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OutLoud_Text_Reader.AboutForm a = new OutLoud_Text_Reader.AboutForm();
+            AboutForm a = new AboutForm();
             a.ShowDialog();
         }
 
