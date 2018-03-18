@@ -1,2 +1,2 @@
 language: csharp
-solution: OutLoud Text Reader.sln
+solution: "OutLoud Text Reader.sln"
