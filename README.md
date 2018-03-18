@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/FairPlay137/OutLoud-Text-Reader.svg?branch=master)](https://travis-ci.org/FairPlay137/OutLoud-Text-Reader)
 # OutLoud Text Reader
 OutLoud Text Reader is an open source, free text reader for Windows, which tries to take on the look and feel of Speakonia, while still providing advanced features in modern Windows versions.
 
