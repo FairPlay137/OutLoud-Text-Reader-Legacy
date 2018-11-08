@@ -1,6 +1,8 @@
 ﻿FairPlay137-TTS presents...
-OutLoud Text Reader - Beta 2 pre
+OutLoud Text Reader - Beta 2
 Thank you for downloading OutLoud Text Reader; an open source, free TTS text reader for Windows!
+
+NOTE: This codebase is no longer maintained. A completely rewritten version is on the way.
 
 Known Issues:
  - Only official Microsoft SAPI 5 voices are supported (No LH Michael & Michelle). I may fix this in the future.

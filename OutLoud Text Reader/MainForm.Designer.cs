@@ -98,6 +98,7 @@
             this.stopSpeakingWhenTextClickedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.hideOnCloseButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hideOnMinimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutOutLoudTextReaderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -139,7 +140,6 @@
             this.quitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.hideOnMinimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -620,7 +620,7 @@
             this.playToolStripMenuItem.Image = global::OutLoud_Text_Reader.Properties.Resources.play1;
             this.playToolStripMenuItem.Name = "playToolStripMenuItem";
             this.playToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.playToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.playToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.playToolStripMenuItem.Text = "Play";
             this.playToolStripMenuItem.Click += new System.EventHandler(this.PlayButton_Click);
             // 
@@ -629,7 +629,7 @@
             this.pauseToolStripMenuItem.Image = global::OutLoud_Text_Reader.Properties.Resources.pause1;
             this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
             this.pauseToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F6;
-            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.pauseToolStripMenuItem.Text = "Pause";
             this.pauseToolStripMenuItem.Click += new System.EventHandler(this.PauseButton_Click);
             // 
@@ -638,14 +638,14 @@
             this.stopToolStripMenuItem.Image = global::OutLoud_Text_Reader.Properties.Resources.stop1;
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
             this.stopToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F7;
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.stopToolStripMenuItem.Text = "Stop";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(124, 6);
             // 
             // propertiesToolStripMenuItem
             // 
@@ -654,7 +654,7 @@
             this.propertiesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.propertiesToolStripMenuItem.Image = global::OutLoud_Text_Reader.Properties.Resources.options;
             this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
-            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.propertiesToolStripMenuItem.Text = "Properties";
             this.propertiesToolStripMenuItem.Click += new System.EventHandler(this.PropertiesToolStripMenuItem_Click);
             // 
@@ -754,6 +754,14 @@
             this.hideOnCloseButtonToolStripMenuItem.Name = "hideOnCloseButtonToolStripMenuItem";
             this.hideOnCloseButtonToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
             this.hideOnCloseButtonToolStripMenuItem.Text = "Hide on Close Button";
+            // 
+            // hideOnMinimizeToolStripMenuItem
+            // 
+            this.hideOnMinimizeToolStripMenuItem.CheckOnClick = true;
+            this.hideOnMinimizeToolStripMenuItem.Enabled = false;
+            this.hideOnMinimizeToolStripMenuItem.Name = "hideOnMinimizeToolStripMenuItem";
+            this.hideOnMinimizeToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
+            this.hideOnMinimizeToolStripMenuItem.Text = "Hide on Minimize";
             // 
             // helpToolStripMenuItem
             // 
@@ -1183,14 +1191,6 @@
             this.quitToolStripMenuItem1.Text = "Quit";
             this.quitToolStripMenuItem1.Click += new System.EventHandler(this.QuitToolStripMenuItem1_Click);
             // 
-            // hideOnMinimizeToolStripMenuItem
-            // 
-            this.hideOnMinimizeToolStripMenuItem.CheckOnClick = true;
-            this.hideOnMinimizeToolStripMenuItem.Enabled = false;
-            this.hideOnMinimizeToolStripMenuItem.Name = "hideOnMinimizeToolStripMenuItem";
-            this.hideOnMinimizeToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
-            this.hideOnMinimizeToolStripMenuItem.Text = "Hide on Minimize";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1203,7 +1203,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "OutLoud Text Reader Beta 2 pre";
+            this.Text = "OutLoud Text Reader Beta 2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);

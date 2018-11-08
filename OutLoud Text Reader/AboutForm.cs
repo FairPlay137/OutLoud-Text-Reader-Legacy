@@ -28,7 +28,7 @@ namespace OutLoud_Text_Reader
             label2.Visible = true;
 #endif
             creditsLabel1.Text = CreditsText(creditsIndex);
-            linkLabel1.Links.Add(0,6, "https://github.com/FairPlay137/OutLoud-Text-Reader");
+            linkLabel1.Links.Add(0,6, "https://github.com/FairPlay137/OutLoud-Text-Reader-Legacy");
         }
         private string CreditsText(int index)
         {

@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OutLoud Text Reader")]
+[assembly: AssemblyTitle("OutLoud Text Reader (Legacy)")]
 [assembly: AssemblyDescription("A free, open-source text reader for Windows")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DanielWS424-TTS/FairPlay137")]
+[assembly: AssemblyCompany("FairPlay137-TTS")]
 [assembly: AssemblyProduct("OutLoud Text Reader")]
-[assembly: AssemblyCopyright("Copyright © DanielWS424-TTS/FairPlay137 2017")]
+[assembly: AssemblyCopyright("Copyright © FairPlay137-TTS 2017-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -41,6 +41,7 @@
             this.tickTimer = new System.Windows.Forms.Timer(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +98,7 @@
             this.creditsLabel1.BackColor = System.Drawing.Color.White;
             this.creditsLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.creditsLabel1.ForeColor = System.Drawing.Color.Black;
-            this.creditsLabel1.Location = new System.Drawing.Point(15, 157);
+            this.creditsLabel1.Location = new System.Drawing.Point(12, 189);
             this.creditsLabel1.Name = "creditsLabel1";
             this.creditsLabel1.Size = new System.Drawing.Size(356, 28);
             this.creditsLabel1.TabIndex = 5;
@@ -112,7 +113,7 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(296, 192);
+            this.button1.Location = new System.Drawing.Point(293, 220);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -145,11 +146,23 @@
             this.linkLabel1.Text = "GitHub";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(12, 162);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(277, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "This codebase is no longer actively maintained.";
+            // 
             // AboutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 227);
+            this.ClientSize = new System.Drawing.Size(380, 255);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
@@ -185,5 +198,6 @@
         private System.Windows.Forms.Timer tickTimer;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label6;
     }
 }
